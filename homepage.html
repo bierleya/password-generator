@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="homepage.css">
+    </head>
+    <body>
+        <div class="page">
+            <h1>Random Password Generator</h1>
+            <p id="info">Enter a password length and select filters as desired. If no filters are selected, all letters, numbers, and symbols will be considered in constructing the password.</p>
+        </div>
+        <div class="checkboxes">
+            <ul>
+                <li><input type="checkbox" id="lowercase">Include lowercase letters</li>
+                <li><input type="checkbox" id="uppercase">Include uppercase letters</li>
+                <li><input type="checkbox" id="numbers">Include numbers</li>
+                <li><input type="checkbox" id="specChar">Include special characters</li>
+            </ul>
+        </div>
+        <div class="page">
+            <input type="text" id="userInput"> <br>
+            <button class="button" onclick="getString()">Get Password</button>
+            <p id="password"></p>
+            <p id="info">In our current society, security is more important than ever and having strong and secure passwords is crucial. It is good practice to have multiple passwords committed to memory, and this is where the password generator comes in handy. Don't worry, none of the generated passwords are stored and unlike many other computer algorithms, these passwords are truly randomly generated. This opens up seemingly endless possibilities; for example, a randomly generated password with 8 characters has 93<sup>8</sup> possibilites, or 5.59 X 10<sup>15</sup>!</p>
+        </div>
+        
+        <script src="password.js"></script>
+    </body>
+</html>
